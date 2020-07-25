@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: 'Poppins', sans-serif;
+}
+.bg-img{
+  background: url('bg.png');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.bg-img:after{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  text-align: center;
+  border-radius:15px;
+  padding: 60px 32px;
+  width: 370px;
+  transform: translate(-50%,-50%);
+  background: rgba(255,255,255,0.04);
+  box-shadow: 5px 5px 8px rgba(129, 154, 181, 0.603),
+   -5px -5px 8px rgba(255, 255, 255, 0.705);
+
+}
+.content header{
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0 0 35px 0;
+  font-family: 'Poppins', sans-serif;
+  background:url('bg.png');
+ -webkit-background-clip: text; 
+ background-clip: text;
+  background-size: contain;
+  width: 100%;
+  text-align: center;
+  color: transparent;
+  font-weight: 900;
+  text-shadow: 0 0 32px #fff;
+  
+}
+
+.field{
+  position: relative;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  background:url('bg.png');
+}
+.login{
+  color: white;
+  margin: 20px 0;
+  font-family: 'Poppins',sans-serif;
+}
+
+i span{
+  margin-left: 8px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-family: 'Poppins',sans-serif;
+}
+.signup{
+  font-size: 15px;
+  color: white;
+  font-family: 'Poppins',sans-serif;
+}
+
+
+
+
+
+.input {
+  margin-top: 40px;
+  text-align: left;
+}
+.input .inputBox {
+  margin-top: 20px;
+}
+.input .inputBox label {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  text-shadow: 0 0 20px #fff;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow:  5px 5px 8px rgba(129, 154, 181, 0.87),
+  -5px -5px 8px rgba(255, 255, 255, 0.945);
+}
+.input .inputBox input {
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  background: #ffffff2f;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  padding: 5px 15px;
+  font-size: 18px;
+  box-shadow: 5px 5px 8px rgba(129, 154, 181, 0.603),
+  -5px -5px 8px rgba(255, 255, 255, 0.705);
+}
+.inputBox input[type="text"]:focus,
+.inputBox input[type="password"]:focus
+{
+  box-shadow:inset 5px 5px 8px rgba(129, 154, 181, 0.603),
+  inset -5px -5px 8px rgba(255, 255, 255, 0.705);
+}
+.input .inputBox input[type="submit"] {
+  margin-top: 20px;
+  box-shadow: 5px 5px 8px rgba(129, 154, 181, 0.603),
+  -5px -5px 8px rgba(255, 255, 255, 0.705);
+}
+.input .inputBox input[type="submit"]:active {
+  color: #fff;
+  margin-top: 20px;
+  box-shadow:inset 5px 5px 8px rgba(129, 154, 181, 0.603),
+  inset -5px -5px 8px rgba(255, 255, 255, 0.705);
+}
+.input .inputBox input::placeholder {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
